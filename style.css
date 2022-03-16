@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(7, 255, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maxBox{
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(63, 61, 61);
+    box-shadow: 0 5px 18px rgba(37, 37, 37, 0.562);
+}
+.minBox{
+    width: 90%;
+    height: 88%;
+    border: solid 1px;
+    background-image: url(./og_og_1605939098278024875.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+}
+.cam{
+    width: 10px;
+    height: 10px;
+    border: solid 10px;
+    border-radius: 50%;
+}
+.menuBtn{
+    width: 60px;
+    height: 25px;
+    background: radial-gradient(60px, rgb(226, 224, 224), rgb(0, 0, 0));
+    border-radius: 10px 10px 0 0 ;
+    border: solid 0.5px ;
+}
+.imgBox{
+    width: 130px;
+    height: 130px;
+    border: dotted 5px red;
+    border-radius: 50%;
+    animation: one 0.3s linear infinite;
+    display: none;
+    padding: 10px;
+}
+@keyframes one{
+    0%{
+        padding: 0px;
+    }
+    50%{
+        padding: 10px;
+    }
+    100%{
+        padding: 0px;
+    }
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+    border-top: solid transparent;
+    border-bottom: solid transparent;
+    border-left:solid 5px red ;
+    border-right:solid 5px red ;
+    animation: two 10s linear infinite;
+    background-color: gold;
+}
+@keyframes two{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.iconBox{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.iconBox .bi{
+    color: gold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.iconBox .bi:active{
+    color: goldenrod;
+}
+.title{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    top: 70px;
+}
+@media(max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 1, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .maxBox{
+        width: 80%;
+        height: 90%;
+        border: solid 1px black;
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px;
+        background-color: rgb(63, 61, 61);
+        box-shadow: 0 5px 18px rgba(37, 37, 37, 0.562);
+        
+    }
+    .minBox{
+        width: 100%;
+        height: 100%;
+        border: solid 1px;
+        background-image: url(./og_og_1605939098278024875.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .cam{
+        width: 10px;
+        height: 10px;
+        border: solid 10px;
+        border-radius: 50%;
+        display: none;
+    }
+    .menuBtn{
+        width: 60px;
+        height: 25px;
+        background: radial-gradient(60px, rgb(226, 224, 224), rgb(0, 0, 0));
+        border-radius: 10px 10px 0 0 ;
+        border: solid 0.5px ;
+        display: none;
+    }
+    .imgBox{
+        width: 130px;
+        height: 130px;
+        border: dotted 5px red;
+        border-radius: 50%;
+        animation: one 0.3s linear infinite;
+    }
+    @keyframes one{
+        0%{
+            padding: 0px;
+        }
+        50%{
+            padding: 10px;
+        }
+        100%{
+            padding: 0px;
+        }
+    }
+    .imgBox img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 5px;
+        border-top: solid transparent;
+        border-bottom: solid transparent;
+        border-left:solid 2px red ;
+        border-right:solid 2px red ;
+        animation: two 10s linear infinite;
+    }
+    @keyframes two{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .iconBox{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    .iconBox .bi{
+        color: gold;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .iconBox .bi:active{
+        color: goldenrod;
+    }
+    .title{
+        position: relative;
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        top: 70px;
+    }
+}
